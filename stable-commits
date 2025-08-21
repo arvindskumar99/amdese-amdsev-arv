@@ -4,8 +4,8 @@
 
 # hypervisor commit
 KERNEL_GIT_URL="https://github.com/torvalds/linux.git"
-KERNEL_HOST_BRANCH="v6.16.1"
-KERNEL_GUEST_BRANCH="v6.16.1"
+KERNEL_HOST_BRANCH="v6.16"
+KERNEL_GUEST_BRANCH="v6.16"
 
 # qemu commit
 QEMU_GIT_URL="https://github.com/qemu/qemu.git"
