@@ -62,7 +62,7 @@ build_kernel()
 		run_cmd $MAKE distclean
 
 		pushd ${V} >/dev/null
-			run_cmd git fetch --depth 1 current "${BRANCH}"
+			run_cmd git fetch --depth 1 current tag "${BRANCH}"
 			run_cmd git checkout "${BRANCH}"
 			COMMIT=$(git log --format="%h" -1 HEAD)
 
