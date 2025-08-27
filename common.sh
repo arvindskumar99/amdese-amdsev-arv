@@ -35,7 +35,7 @@ build_kernel()
 		fi
 
 		if [ ! -d "${V}" ]; then
-			run_cmd git clone -b "${BRANCH}" --depth 1 "${KERNEL_GIT_URL}" "${V}"
+			run_cmd git clone -b "${BRANCH}" --depth 1 "${KERNEL_GIT_URL}" "${V}" && cd ${V} && git checkout tags/v6.16.1
 			run_cmd git -C "${V}" remote add current "${KERNEL_GIT_URL}"
 		fi
 
